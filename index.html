@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap" rel="stylesheet">
+    <script src="./image.js" defer></script>
+    <title>recette de cuisine</title>
+</head>
+<body>
+    <header>
+        <h1>Une petite faim?<br> pas d'idée! match et fais toi plaisir ...</h1>
+        <!-- swipe a t'as faim -->
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">×</a>
+            <ul>
+              <li><a href="#">A propos</a></li>
+              <li><a href="#">Nos services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          
+          <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+          <script>var sidenav = document.getElementById("mySidenav");
+            var openBtn = document.getElementById("openBtn");
+            var closeBtn = document.getElementById("closeBtn");
+            
+            openBtn.onclick = openNav;
+            closeBtn.onclick = closeNav;
+            
+            /* Set the width of the side navigation to 250px */
+            function openNav() {
+              sidenav.classList.add("active");
+            }
+            
+            /* Set the width of the side navigation to 0 */
+            function closeNav() {
+              sidenav.classList.remove("active");
+            }</script>
+    </header>
+
+    <main>
+    <div class="recherche">
+        <div class="contourImage">
+            <img src="./image/fourchettes.png" alt="fourchettes" class="fourchettes">
+            <img class="choixImage" id="image"></img>
+            <img src="./image/couteau.png" alt="couteau" class="couteau">
+        </div>
+
+        <div id="popup">
+          <h3 class="titrePopup">Ingrédients :</h3>
+          <li class="listPopup">
+            
+          </li>
+    
+
+        </div>
+        
+    </div>
+        
+        
+    </main>
+
+    <section>
+        <div class="vote">
+
+            <button class="retour" id="retour"></button>
+            <button class="like" id="like"></button>
+            <button class="swipe" id="swipe"></button>
+
+        </div>
+
+        
+    </section>
+
+    <section>
+        <div class="mail">
+            <div class="mailText">
+                <h2>Plus besoin de se casser la tête!</h2>
+                <p class="mailP">Recevez chaque jour des propostion de plats goûteux et healty !</p>
+            </div>
+            <div class="mailInput">
+                <input type="email" id="email" placeholder="email">
+                <input type="submit" id="submit">
+            </div>
+
+        </div>
+    </section>
+    
+    <footer>
+        <a href="#">Nous contacter</a>
+        <a href="#">Mention légale</a>
+        <a href="#">Préférences cookies</a>
+    </footer>
+
+    
+</body>
+</html>
